@@ -1,0 +1,7 @@
+{
+  "name": "BusinessCloud",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
