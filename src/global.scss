@@ -35,10 +35,15 @@ body {
 ion-content {
     --offset-bottom: auto!important;
     --overflow: hidden;
+    background: white;
     overflow: auto;
     &::-webkit-scrollbar {
         display: none;
     }
+}
+
+ion-grid {
+    background: white;
 }
 
 .header-div {
@@ -60,12 +65,147 @@ ion-content {
     margin-top: 30%;
     background-color: white;
     border-radius: 50px 50px 0px 0px;
+    ion-grid {
+        background: transparent;
+    }
+}
+
+.input-with-icon {
+    background: white;
+    border: 1px solid #00000030;
+    height: 35px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 0 calc(16px + var(--ion-safe-area-left, 0px));
+}
+
+.input-with-icon:focus {
+    outline: none;
+}
+
+.input-icon {
+    position: absolute;
+    right: calc(16px + var(--ion-safe-area-left, 0px));
+    width: 20px;
+    height: 20px;
 }
 
 .app-icon {
     width: 30px;
     height: 30px;
     color: var(--color-3);
+}
+
+.app-card {
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px #00000010;
+    border: 1px solid #00000030;
+    margin: 0 10px;
+    margin-bottom: 15px;
+    ion-card-content {
+        padding: 0;
+    }
+    .card-title {
+        color: var(--color-3);
+        font-size: 1.05rem;
+        font-weight: 600;
+        margin: 0;
+        width: 100%;
+    }
+    .card-text-client {
+        color: #2865a2f5;
+        font-size: 0.9rem;
+        font-weight: 500;
+        margin: 0;
+        margin-top: 3px;
+        width: 100%;
+    }
+    .card-text-date {
+        color: #00000090;
+        font-size: 0.8rem;
+        margin: 0;
+        margin-top: 3px;
+        width: 100%;
+    }
+    .card-text-time {
+        text-align: center;
+        color: #00000090;
+        font-size: 0.8rem;
+        margin: 0;
+        margin-top: 3px;
+        width: 100%;
+    }
+    .card-text-profit {
+        text-align: center;
+        color: #09B225;
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin: 0;
+        margin-top: 3px;
+        width: 100%;
+    }
+    .card-text-rest {
+        text-align: center;
+        color: black;
+        font-size: 0.9rem;
+        font-weight: 500;
+        margin: 0;
+        margin-top: 3px;
+        width: 100%;
+    }
+    .card-text-loss {
+        text-align: center;
+        color: #EE1414;
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin: 0;
+        margin-top: 3px;
+        width: 100%;
+    }
+}
+
+.status-div-danger {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #00000030;
+    border-radius: 50%;
+    background-color: #F20C0C;
+}
+
+.status-div-warning {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #00000030;
+    border-radius: 50%;
+    background-color: #FF8800;
+}
+
+.status-div-success {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #00000030;
+    border-radius: 50%;
+    background-color: #009E0F;
+}
+
+.alert-head.sc-ion-alert-md {
+    padding: 0;
+    padding-top: 10px;
+}
+
+.alert-button-group.sc-ion-alert-md {
+    padding: 0;
+    padding-bottom: 10px;
+}
+
+.alert-radio-label.sc-ion-alert-md {
+    color: black !important;
+    border: none;
+}
+
+.alert-radio-group.sc-ion-alert-md,
+.alert-checkbox-group.sc-ion-alert-md {
+    border: none;
 }
 
 .center {
@@ -86,6 +226,26 @@ ion-content {
     justify-content: space-around;
 }
 
+.start {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 .pointer {
     cursor: pointer;
+}
+
+.hide-overflow {
+    white-space: nowrap;
+    white-space: -moz-pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

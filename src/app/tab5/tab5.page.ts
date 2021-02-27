@@ -13,7 +13,6 @@ export class Tab5Page implements OnInit {
   ngOnInit() {
   }
 
-
   nagivateTo(path: string) {
     this.router.navigate([path])
   }
