@@ -1,0 +1,53 @@
+.logo-div {
+    height: 34vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    img {
+        width: 85%;
+    }
+}
+
+.form-div {
+    padding: 0 35px;
+    margin-top: 3.2rem;
+}
+
+.password-lost-text {
+    color: var(--color-3);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.register-text {
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+}
+
+.social-div {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    ion-icon {
+        width: 20px;
+        height: 20px;
+        color: white;
+    }
+}
+
+.mbottom-2 {
+    margin-bottom: 2rem
+}
+
+.facebook-div {
+    background-color: #3B5998;
+}
+
+.linkedin-div {
+    background: #007bb5;
+}
+
+.google-div {
+    background: #dd4b39;
+}

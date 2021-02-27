@@ -1,0 +1,26 @@
+<ion-content>
+    <div class="logo-div">
+        <img src="./../../../assets/img/logo.PNG" alt="">
+    </div>
+    <div class="form-div">
+        <h1 class="title-auth">Authentification</h1>
+        <p class="text-auth">La double authentification est activé. Un mail avec un code vous a été envoyé.</p>
+        <div class="between input-code-div">
+            <input type="text" id="1" class="input-with-icon input-code">
+            <input type="text" id="2" class="input-with-icon input-code">
+            <input type="text" id="3" class="input-with-icon input-code">
+            <input type="text" id="4" class="input-with-icon input-code">
+            <input type="text" id="5" class="input-with-icon input-code">
+            <input type="text" id="6" class="input-with-icon input-code">
+        </div>
+        <div class="mb-3 center">
+            <button class="app-btn-auth pointer" (click)="nagivateTo('/tabs/tab3')">Connexion</button>
+        </div>
+        <div class="mb-4 center">
+            <button class="app-btn-auth pointer">Renvoyer un code</button>
+        </div>
+        <div class="center">
+            <span class="password-lost-text pointer" (click)="nagivateTo('/auth/login')">Retour à la connexion</span>
+        </div>
+    </div>
+</ion-content>

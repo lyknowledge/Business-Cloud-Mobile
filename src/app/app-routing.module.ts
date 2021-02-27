@@ -3,6 +3,26 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
+    path: 'auth/login',
+    loadChildren: () => import('./auth/login/login.module').then(m => m.LoginPageModule)
+  },
+  {
+    path: 'auth/register',
+    loadChildren: () => import('./auth/register/register.module').then(m => m.RegisterPageModule)
+  },
+  {
+    path: 'auth/password-lost',
+    loadChildren: () => import('./auth/password-lost/password-lost.module').then(m => m.PasswordLostPageModule)
+  },
+  {
+    path: 'auth/verify-email',
+    loadChildren: () => import('./auth/email-verify/email-verify.module').then(m => m.EmailVerifyPageModule)
+  },
+  {
+    path: 'auth/double-auth',
+    loadChildren: () => import('./auth/double-auth/double-auth.module').then(m => m.DoubleAuthPageModule)
+  },
+  {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
@@ -13,4 +33,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
