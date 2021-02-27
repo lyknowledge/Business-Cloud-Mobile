@@ -1,0 +1,30 @@
+.logo-div {
+    height: 34vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    img {
+        width: 85%;
+    }
+}
+
+.form-div {
+    padding: 0 35px;
+    margin-top: 1rem;
+}
+
+.password-lost-text {
+    color: var(--color-3);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.register-text {
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+}
+
+.mbottom-2 {
+    margin-bottom: 2rem
+}

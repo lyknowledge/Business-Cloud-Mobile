@@ -1,0 +1,51 @@
+<ion-content>
+    <div class="logo-div">
+        <img src="./../../../assets/img/logo.PNG" alt="">
+    </div>
+    <div class="form-div">
+        <ion-toolbar class="mbottom-2">
+            <ion-segment value="personne" (ionChange)="segmentChanged($event)">
+                <ion-segment-button value="personne">
+                    Particulier
+                </ion-segment-button>
+                <ion-segment-button value="entreprise">
+                    Entreprise
+                </ion-segment-button>
+            </ion-segment>
+        </ion-toolbar>
+        <div class="mb-4 center">
+            <input type="text" id="nom" class="input-with-icon" placeholder='Nom'>
+        </div>
+        <div class="mb-4 center">
+            <input type="text" id="prenom" class="input-with-icon" placeholder='Prénom'>
+        </div>
+        <div class="mb-4 center">
+            <input type="email" id="email" class="input-with-icon" placeholder='Email'>
+        </div>
+        <div class="mb-4 center">
+            <input type="text" id="date-naiss" class="input-with-icon" placeholder='Date de naissance'>
+        </div>
+        <div class="mb-4 center">
+            <input type="text" id="phone" class="input-with-icon" placeholder='Téléphone'>
+        </div>
+        <div class="mb-4 center">
+            <input type="password" id="password" class="input-with-icon" placeholder='Mot de passe'>
+        </div>
+        <div class="mb-4 center" [class.mb-5]="_segment !== 'entreprise'">
+            <input type="password" id="password" class="input-with-icon" placeholder='Confirmer le mot de passe'>
+        </div>
+        <div class="mb-4 center" *ngIf="_segment === 'entreprise'">
+            <input type="text" id="nom-entreprise" class="input-with-icon" placeholder="Nom de l'entreprise">
+        </div>
+        <div class="mb-5 center" *ngIf="_segment === 'entreprise'">
+            <input type="text" id="siret" class="input-with-icon" placeholder="N° SIRET">
+        </div>
+        <div class="mbottom-2 center">
+            <button class="app-btn-auth pointer" (click)="nagivateTo('/auth/verify-email')">Inscription</button>
+        </div>
+        <div class="mbottom-2 center">
+            <span class="register-text">Vous avez déjà un compte ?</span>
+            <span class="password-lost-text pointer" (click)="nagivateTo('/auth/login')">Connexion</span>
+        </div>
+    </div>
+</ion-content>
