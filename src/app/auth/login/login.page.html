@@ -8,10 +8,10 @@
         </div>
         <div class="mb-5 end">
             <input type="password" id="password" class="input-with-icon" placeholder='Mot de passe'>
-            <span class="password-lost-text pointer" (click)="nagivateTo('/auth/password-lost')">Mot de passe oublié ?</span>
+            <span class="password-lost-text pointer" (click)="navigateTo('/auth/password-lost')">Mot de passe oublié ?</span>
         </div>
         <div class="mbottom-2 center">
-            <button class="app-btn-auth pointer" (click)="nagivateTo('/auth/double-auth')">Connexion</button>
+            <button class="app-btn-auth pointer" (click)="navigateTo('/auth/double-auth')">Connexion</button>
         </div>
         <div class="mbottom-2 around">
             <div class="center social-div facebook-div pointer">
@@ -26,7 +26,7 @@
         </div>
         <div class="center">
             <span class="register-text">Vous n'avez pas encore de compte ?</span>
-            <span class="password-lost-text pointer" (click)="nagivateTo('/auth/register')">Inscription</span>
+            <span class="password-lost-text pointer" (click)="navigateTo('/auth/register')">Inscription</span>
         </div>
     </div>
 </ion-content>

@@ -15,7 +15,7 @@ export class RegisterPage implements OnInit {
   ngOnInit() {
   }
 
-  nagivateTo(path: string) {
+  navigateTo(path: string) {
     this.router.navigate([path])
   }
 

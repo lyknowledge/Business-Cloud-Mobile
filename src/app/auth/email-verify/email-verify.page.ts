@@ -13,7 +13,7 @@ export class EmailVerifyPage implements OnInit {
   ngOnInit() {
   }
 
-  nagivateTo(path: string) {
+  navigateTo(path: string) {
     this.router.navigate([path])
   }
 

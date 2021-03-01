@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.page.html',
-  styleUrls: ['./login.page.scss'],
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss'],
 })
-export class LoginPage implements OnInit {
+export class HeaderComponent implements OnInit {
 
   constructor(private router: Router) { }
 
@@ -16,4 +16,5 @@ export class LoginPage implements OnInit {
   navigateTo(path: string) {
     this.router.navigate([path])
   }
+
 }

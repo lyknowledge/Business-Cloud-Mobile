@@ -28,6 +28,14 @@ const routes: Routes = [
         loadChildren: () => import('../tab5/tab5.module').then(m => m.Tab5PageModule)
       },
       {
+        path: 'conversations',
+        loadChildren: () => import('./../pages/conversations/conversations.module').then(m => m.ConversationsPageModule)
+      },
+      {
+        path: 'notifications',
+        loadChildren: () => import('./../pages/notifications/notifications.module').then(m => m.NotificationsPageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab3',
         pathMatch: 'full'
@@ -36,7 +44,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/tab3',
     pathMatch: 'full'
   }
 ];

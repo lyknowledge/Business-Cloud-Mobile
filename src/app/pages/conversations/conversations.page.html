@@ -1,28 +1,22 @@
 <ion-content>
-    <app-header></app-header>
-
-    <ion-grid>
+    <ion-grid class="header-div-snd">
         <ion-row>
-            <ion-col size='12'>
-                <ion-item>
-                    <ion-select placeholder="Rôle">
-                        <ion-select-option value="1">Employé</ion-select-option>
-                        <ion-select-option value="2">Client</ion-select-option>
-                        <ion-select-option value="3">Prospect</ion-select-option>
-                    </ion-select>
-                </ion-item>
+            <ion-col size='3' class="start">
+                <ion-icon name="chevron-back-outline" class="app-icon pointer" (click)="nagivateBack()"></ion-icon>
             </ion-col>
-            <ion-col size='12' class="center">
-                <input type="text" class="input-with-icon" placeholder='Recherche'>
-                <ion-icon name="search-outline" class="input-icon"></ion-icon>
+            <ion-col size='6'>
+                <h2 class="header-title text-center">Conversation</h2>
+            </ion-col>
+            <ion-col size='3' class="end">
+                <ion-icon name="add-outline" class="app-icon pointer"></ion-icon>
             </ion-col>
         </ion-row>
     </ion-grid>
     <ion-content class="scroll-list">
         <ion-list>
-            <ion-card class="app-card">
+            <ion-card class="app-card pointer" (click)="navigateTo('/messages')">
                 <ion-card-content>
-                    <ion-grid>
+                    <ion-grid class="py-0">
                         <ion-row>
                             <ion-col size='3' class="center">
                                 <div class="avatar-list">
@@ -30,18 +24,18 @@
                             </ion-col>
                             <ion-col size='7' class="start">
                                 <h2 class="card-title hide-overflow">Jacques Pierre</h2>
-                                <p class="card-text-date hide-overflow" style="margin-top:-8px;">Client</p>
+                                <p class="card-text-date hide-overflow" style="margin-top:-8px;">Le dernier message est vraiment trop cool tu verras</p>
                             </ion-col>
                             <ion-col size='2' class="center">
-                                <div class="status-div-warning"></div>
+                                <p class="card-text-time hide-overflow">3m</p>
                             </ion-col>
                         </ion-row>
                     </ion-grid>
                 </ion-card-content>
             </ion-card>
-            <ion-card class="app-card">
+            <ion-card class="app-card pointer" (click)="navigateTo('/messages')">
                 <ion-card-content>
-                    <ion-grid>
+                    <ion-grid class="py-0">
                         <ion-row>
                             <ion-col size='3' class="center">
                                 <div class="avatar-list">
@@ -49,18 +43,18 @@
                             </ion-col>
                             <ion-col size='7' class="start">
                                 <h2 class="card-title hide-overflow">Jacques Pierre</h2>
-                                <p class="card-text-date hide-overflow" style="margin-top:-8px;">Client</p>
+                                <p class="card-text-date hide-overflow" style="margin-top:-8px;">Le dernier message est vraiment trop cool tu verras</p>
                             </ion-col>
                             <ion-col size='2' class="center">
-                                <div class="status-div-danger"></div>
+                                <p class="card-text-time hide-overflow">4h</p>
                             </ion-col>
                         </ion-row>
                     </ion-grid>
                 </ion-card-content>
             </ion-card>
-            <ion-card class="app-card">
+            <ion-card class="app-card pointer" (click)="navigateTo('/messages')">
                 <ion-card-content>
-                    <ion-grid>
+                    <ion-grid class="py-0">
                         <ion-row>
                             <ion-col size='3' class="center">
                                 <div class="avatar-list">
@@ -68,18 +62,18 @@
                             </ion-col>
                             <ion-col size='7' class="start">
                                 <h2 class="card-title hide-overflow">Jacques Pierre</h2>
-                                <p class="card-text-date hide-overflow" style="margin-top:-8px;">Client</p>
+                                <p class="card-text-date hide-overflow" style="margin-top:-8px;">Le dernier message est vraiment trop cool tu verras</p>
                             </ion-col>
                             <ion-col size='2' class="center">
-                                <div class="status-div-success"></div>
+                                <p class="card-text-time hide-overflow">21h</p>
                             </ion-col>
                         </ion-row>
                     </ion-grid>
                 </ion-card-content>
             </ion-card>
-            <ion-card class="app-card">
+            <ion-card class="app-card pointer" (click)="navigateTo('/messages')">
                 <ion-card-content>
-                    <ion-grid>
+                    <ion-grid class="py-0">
                         <ion-row>
                             <ion-col size='3' class="center">
                                 <div class="avatar-list">
@@ -87,18 +81,18 @@
                             </ion-col>
                             <ion-col size='7' class="start">
                                 <h2 class="card-title hide-overflow">Jacques Pierre</h2>
-                                <p class="card-text-date hide-overflow" style="margin-top:-8px;">Client</p>
+                                <p class="card-text-date hide-overflow" style="margin-top:-8px;">Le dernier message est vraiment trop cool tu verras</p>
                             </ion-col>
                             <ion-col size='2' class="center">
-                                <div class="status-div-success"></div>
+                                <p class="card-text-time hide-overflow">4j</p>
                             </ion-col>
                         </ion-row>
                     </ion-grid>
                 </ion-card-content>
             </ion-card>
-            <ion-card class="app-card">
+            <ion-card class="app-card pointer" (click)="navigateTo('/messages')">
                 <ion-card-content>
-                    <ion-grid>
+                    <ion-grid class="py-0">
                         <ion-row>
                             <ion-col size='3' class="center">
                                 <div class="avatar-list">
@@ -106,18 +100,18 @@
                             </ion-col>
                             <ion-col size='7' class="start">
                                 <h2 class="card-title hide-overflow">Jacques Pierre</h2>
-                                <p class="card-text-date hide-overflow" style="margin-top:-8px;">Client</p>
+                                <p class="card-text-date hide-overflow" style="margin-top:-8px;">Le dernier message est vraiment trop cool tu verras</p>
                             </ion-col>
                             <ion-col size='2' class="center">
-                                <div class="status-div-warning"></div>
+                                <p class="card-text-time hide-overflow">27j</p>
                             </ion-col>
                         </ion-row>
                     </ion-grid>
                 </ion-card-content>
             </ion-card>
-            <ion-card class="app-card">
+            <ion-card class="app-card pointer" (click)="navigateTo('/messages')">
                 <ion-card-content>
-                    <ion-grid>
+                    <ion-grid class="py-0">
                         <ion-row>
                             <ion-col size='3' class="center">
                                 <div class="avatar-list">
@@ -125,10 +119,29 @@
                             </ion-col>
                             <ion-col size='7' class="start">
                                 <h2 class="card-title hide-overflow">Jacques Pierre</h2>
-                                <p class="card-text-date hide-overflow" style="margin-top:-8px;">Client</p>
+                                <p class="card-text-date hide-overflow" style="margin-top:-8px;">Le dernier message est vraiment trop cool tu verras</p>
                             </ion-col>
                             <ion-col size='2' class="center">
-                                <div class="status-div-success"></div>
+                                <p class="card-text-time hide-overflow">35j</p>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </ion-card-content>
+            </ion-card>
+            <ion-card class="app-card pointer" (click)="navigateTo('/messages')">
+                <ion-card-content>
+                    <ion-grid class="py-0">
+                        <ion-row>
+                            <ion-col size='3' class="center">
+                                <div class="avatar-list">
+                                </div>
+                            </ion-col>
+                            <ion-col size='7' class="start">
+                                <h2 class="card-title hide-overflow">Jacques Pierre</h2>
+                                <p class="card-text-date hide-overflow" style="margin-top:-8px;">Le dernier message est vraiment trop cool tu verras</p>
+                            </ion-col>
+                            <ion-col size='2' class="center">
+                                <p class="card-text-time hide-overflow">54j</p>
                             </ion-col>
                         </ion-row>
                     </ion-grid>
