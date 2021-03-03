@@ -1,0 +1,70 @@
+.scroll-list {
+    height: 78vh;
+    --offset-bottom: auto!important;
+    --overflow: hidden;
+    overflow: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    ion-list {
+        padding: 0;
+    }
+}
+
+p {
+    margin: 0;
+}
+
+.notif-card {
+    display: flex;
+    height: 60px;
+    border-radius: 15px;
+    border: 1px solid #00000030;
+    box-shadow: 0px 3px 5px #00000010;
+    margin-bottom: 5px;
+}
+
+.icon-notif-card {
+    min-width: 58px;
+    width: 58px;
+    height: 58px;
+    padding: 8px;
+}
+
+.time-notif-card {
+    padding: 8px;
+    width: 3.5rem;
+}
+
+.icon-div {
+    width: 100%;
+    height: 100%;
+    background: #DFE7F5;
+    border-radius: 10px;
+}
+
+.text-notif-card {
+    width: 11.5rem;
+    padding: 0px 5px;
+    margin: auto 0;
+    .main-text {
+        color: var(--color-3);
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .sub-text {
+        color: #00000070;
+        font-size: 12px;
+    }
+}
+
+.transparent-top {
+    position: fixed;
+    top: 88px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 2px 0;
+    background-image: linear-gradient( 180deg, #0000000d 0%, transparent 100%) !important;
+    z-index: 10;
+}

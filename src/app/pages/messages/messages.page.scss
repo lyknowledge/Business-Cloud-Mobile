@@ -1,0 +1,89 @@
+.scroll-list {
+    height: 77vh;
+    --offset-bottom: auto!important;
+    --overflow: hidden;
+    overflow: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    ion-list {
+        padding: 0;
+    }
+}
+
+.message-div {
+    min-height: 60vh;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 2px;
+    white-space: pre-wrap;
+    min-width: 150px;
+    max-width: 270px;
+}
+
+.my-message {
+    background: var(--color-3);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 15px;
+    p {
+        margin: 0;
+    }
+}
+
+.other-message {
+    background: #f1f0f5;
+    border-radius: 10px;
+    color: #18171a;
+    font-size: 15px;
+    p {
+        margin: 0;
+    }
+}
+
+.my-time {
+    color: #fff;
+    float: right;
+    font-size: small;
+}
+
+.other-time {
+    color: #bdbdbd;
+    float: right;
+    font-size: small;
+}
+
+.transparent-top {
+    position: fixed;
+    top: 88px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 2px 0;
+    background-image: linear-gradient( 180deg, #0000000d 0%, transparent 100%) !important;
+    z-index: 10;
+}
+
+.transparent-bottom {
+    position: fixed;
+    top: calc(77vh + 88px);
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 2px 0;
+    background-image: linear-gradient( 180deg, transparent 0%, #0000000d 100%) !important;
+    z-index: 10;
+}
+
+.app-btn-msg {
+    width: 100%;
+    background-color: var(--color-3);
+    color: white;
+    border-radius: 10px;
+    height: 35px;
+    font-size: 1.085rem;
+    font-weight: 400;
+}

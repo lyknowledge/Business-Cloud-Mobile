@@ -1,0 +1,54 @@
+ion-item {
+    border: 1px solid #00000030;
+    --border-width: 0;
+    border-radius: 10px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ion-select {
+        padding: 0;
+        width: 100%;
+        --placeholder-opacity: 1;
+        --placeholder-color: #757575;
+        .select-placeholder {
+            --color: black;
+            --opacity: 1;
+            color: black;
+            opacity: 1;
+        }
+    }
+}
+
+.scroll-list {
+    height: 78vh;
+    --offset-bottom: auto!important;
+    --overflow: hidden;
+    overflow: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    ion-list {
+        padding: 0;
+    }
+}
+
+.avatar-list {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url(./../../../assets/img/avatar-icon.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.transparent-top {
+    position: fixed;
+    top: 88px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 2px 0;
+    background-image: linear-gradient( 180deg, #0000000d 0%, transparent 100%) !important;
+    z-index: 10;
+}
