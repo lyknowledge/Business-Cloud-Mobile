@@ -1,0 +1,31 @@
+<ion-content class="background-div">
+    <div class="background-div-rounded">
+        <div class="back-arrow-absolute center">
+            <ion-row class="w-100">
+                <ion-col size='2' class="center">
+                    <ion-icon name="chevron-back-outline" class="app-icon pointer" (click)="nagivateBack()"></ion-icon>
+                </ion-col>
+                <ion-col size='8'>
+                    <h2 class="header-title text-center hide-overflow">Avatar</h2>
+                </ion-col>
+                <ion-col size='2' class="end">
+                </ion-col>
+            </ion-row>
+        </div>
+        <div class="input-div-profile center">
+            <div class="w-85 text-center">
+                <div class="avatar-grid center">
+                    <div class="circle-avatar">
+
+                    </div>
+                </div>
+                <div class="center mb-2">
+                    <button class="app-btn-auth pointer">Appareil Photo&nbsp;&nbsp;<ion-icon name="camera"></ion-icon></button>
+                </div>
+                <div class="center">
+                    <button class="app-btn-auth pointer" (click)="navigateTo('/tabs/tab5')">Valider</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-content>

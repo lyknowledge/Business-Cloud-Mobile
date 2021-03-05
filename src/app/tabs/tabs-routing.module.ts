@@ -36,6 +36,26 @@ const routes: Routes = [
         loadChildren: () => import('./../pages/notifications/notifications.module').then(m => m.NotificationsPageModule)
       },
       {
+        path: 'user-info',
+        loadChildren: () => import('./../pages/user-info/user-info.module').then(m => m.UserInfoPageModule)
+      },
+      {
+        path: 'user-avatar',
+        loadChildren: () => import('./../pages/user-avatar/user-avatar.module').then(m => m.UserAvatarPageModule)
+      },
+      {
+        path: 'user-change-password',
+        loadChildren: () => import('./../pages/user-change-password/user-change-password.module').then(m => m.UserChangePasswordPageModule)
+      },
+      {
+        path: 'user-change-address',
+        loadChildren: () => import('./../pages/user-change-address/user-change-address.module').then(m => m.UserChangeAddressPageModule)
+      },
+      {
+        path: 'user-profile',
+        loadChildren: () => import('./../pages/user-profile/user-profile.module').then(m => m.UserProfilePageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab3',
         pathMatch: 'full'

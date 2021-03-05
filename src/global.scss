@@ -68,7 +68,8 @@ ion-grid {
 
 .background-div-rounded {
     width: 100vw;
-    margin-top: 30%;
+    margin-top: 15vh;
+    min-height: 76vh;
     background-color: white;
     border-radius: 50px 50px 0px 0px;
     ion-grid {
@@ -91,9 +92,10 @@ ion-grid {
 
 .input-icon {
     position: absolute;
-    right: calc(16px + var(--ion-safe-area-left, 0px));
+    right: 23px;
     width: 20px;
     height: 20px;
+    color: #757575;
 }
 
 .app-icon {
@@ -282,4 +284,29 @@ ion-grid {
     white-space: -moz-pre-wrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.w-85 {
+    width: 85%;
+}
+
+.back-arrow-absolute {
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+    width: 100%;
+    .header-title {
+        color: white;
+    }
+    ion-icon {
+        color: white;
+    }
+}
+
+.input-div-profile {
+    min-height: 76vh;
+    width: 100%;
+    div {
+        padding: 5px;
+    }
 }
