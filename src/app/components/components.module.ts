@@ -4,12 +4,16 @@ import { HeaderComponent } from './header/header.component';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { AddBtnComponent } from './add-btn/add-btn.component';
+import { ArticleTableComponent } from './article-table/article-table.component';
+import { ArticleTableRowComponent } from './article-table/article-table-row/article-table-row.component';
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    AddBtnComponent
+    AddBtnComponent,
+    ArticleTableComponent,
+    ArticleTableRowComponent,
   ],
   imports: [
     IonicModule,
@@ -18,7 +22,9 @@ import { AddBtnComponent } from './add-btn/add-btn.component';
   ],
   exports: [
     HeaderComponent,
-    AddBtnComponent
+    AddBtnComponent,
+    ArticleTableComponent,
+    ArticleTableRowComponent,
   ]
 })
 export class ComponentsModule { }

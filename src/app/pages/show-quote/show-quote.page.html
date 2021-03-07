@@ -1,0 +1,54 @@
+<ion-content class="background-div">
+    <div class="background-div-rounded">
+        <div class="back-arrow-absolute center">
+            <ion-row class="w-100">
+                <ion-col size='2' class="center">
+                    <ion-icon name="chevron-back-outline" class="app-icon pointer" (click)="nagivateBack()"></ion-icon>
+                </ion-col>
+                <ion-col size='8'>
+                    <h2 class="header-title text-center hide-overflow">Devis</h2>
+                </ion-col>
+                <ion-col size='2' class="end">
+                </ion-col>
+            </ion-row>
+        </div>
+        <ion-grid>
+            <ion-row>
+                <ion-col size='2'>
+                </ion-col>
+                <ion-col size='8' class="center bill-title">
+                    <p>DEV1458697456</p>
+                </ion-col>
+                <ion-col size='2' class="center mt-2">
+                    <ion-icon src="assets/icon/edit.svg" class="app-icon edit-icon pointer"></ion-icon>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+        <ion-grid>
+            <ion-row>
+                <ion-col size='12' class="center mt-3 mb-3">
+                    <input type="text" id="name" class="input-with-icon" placeholder='Nom'>
+                    <ion-icon name="person-outline" class="input-icon"></ion-icon>
+                </ion-col>
+                <ion-col size='12' class="center mb-3">
+                    <input type="email" id="email" class="input-with-icon" placeholder='Email'>
+                    <ion-icon name="mail-outline" class="input-icon"></ion-icon>
+                </ion-col>
+                <ion-col size='6' class="center mb-3">
+                    <input type="text" id="phone" class="input-with-icon" placeholder='Téléphone'>
+                    <ion-icon name="call-outline" class="input-icon"></ion-icon>
+                </ion-col>
+                <ion-col size='6' class="center mb-3">
+                    <input type="date" id="dateC" class="input-without-icon" placeholder='Création'>
+                    <ion-icon name="calendar-outline" class="input-icon"></ion-icon>
+                </ion-col>
+                <ion-col size='12' class="center mb-3">
+                    <app-article-table class="w-100" [articles]="articles"></app-article-table>
+                </ion-col>
+                <ion-col size='12' class="center mb-3">
+                    <button class="app-btn-auth pointer">Relancer</button>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+</ion-content>

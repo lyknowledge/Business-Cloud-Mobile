@@ -79,7 +79,17 @@ ion-grid {
 
 .input-with-icon {
     background: white;
-    border: 1px solid #00000030;
+    border: 1px solid #00000040;
+    height: 35px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 0 calc(16px + var(--ion-safe-area-left, 0px));
+    padding-right: 40px;
+}
+
+.input-without-icon {
+    background: white;
+    border: 1px solid #00000040;
     height: 35px;
     width: 100%;
     border-radius: 10px;
@@ -90,12 +100,24 @@ ion-grid {
     outline: none;
 }
 
+.input-without-icon:focus {
+    outline: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    margin: 0;
+    z-index: 999;
+    width: 20px;
+    margin-right: -5px;
+}
+
 .input-icon {
     position: absolute;
-    right: 23px;
+    right: 20px;
     width: 20px;
     height: 20px;
-    color: #757575;
+    color: var(--color-3);
 }
 
 .app-icon {
@@ -107,7 +129,7 @@ ion-grid {
 .app-card {
     border-radius: 10px;
     box-shadow: 0px 3px 5px #00000010;
-    border: 1px solid #00000030;
+    border: 1px solid #00000040;
     margin: 10px 10px;
     ion-card-content {
         padding: 0;
@@ -174,7 +196,7 @@ ion-grid {
 .status-div-danger {
     width: 28px;
     height: 28px;
-    border: 1px solid #00000030;
+    border: 1px solid #00000040;
     border-radius: 50%;
     background-color: #F20C0C;
 }
@@ -182,7 +204,7 @@ ion-grid {
 .status-div-warning {
     width: 28px;
     height: 28px;
-    border: 1px solid #00000030;
+    border: 1px solid #00000040;
     border-radius: 50%;
     background-color: #FF8800;
 }
@@ -190,7 +212,7 @@ ion-grid {
 .status-div-success {
     width: 30px;
     height: 30px;
-    border: 1px solid #00000030;
+    border: 1px solid #00000040;
     border-radius: 50%;
     background-color: #009E0F;
 }
