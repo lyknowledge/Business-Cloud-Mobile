@@ -1,5 +1,6 @@
 <ion-content>
     <app-header></app-header>
+    <app-add-btn></app-add-btn>
     <ion-grid>
         <ion-row>
             <ion-col size='5'>
@@ -22,7 +23,7 @@
                 </ion-item>
             </ion-col>
             <ion-col size='2' class="center">
-                <ion-icon name="calendar-outline" class="app-icon"></ion-icon>
+                <ion-icon name="calendar-outline" class="app-icon calendar-icon"></ion-icon>
             </ion-col>
             <ion-col size='12' class="center">
                 <input type="text" class="input-with-icon" placeholder='Recherche'>
@@ -32,7 +33,7 @@
     </ion-grid>
     <ion-content class="scroll-list">
         <ion-list>
-            <ion-card class="app-card">
+            <ion-card class="app-card pointer" (click)="navigateTo('/tabs/show-quote')">
                 <ion-card-content>
                     <ion-grid>
                         <ion-row>
@@ -53,7 +54,7 @@
                     </ion-grid>
                 </ion-card-content>
             </ion-card>
-            <ion-card class="app-card">
+            <ion-card class="app-card pointer" (click)="navigateTo('/tabs/show-bill')">
                 <ion-card-content>
                     <ion-grid>
                         <ion-row>
@@ -74,7 +75,7 @@
                     </ion-grid>
                 </ion-card-content>
             </ion-card>
-            <ion-card class="app-card">
+            <ion-card class="app-card pointer" (click)="navigateTo('/tabs/show-bill')">
                 <ion-card-content>
                     <ion-grid>
                         <ion-row>
@@ -95,7 +96,7 @@
                     </ion-grid>
                 </ion-card-content>
             </ion-card>
-            <ion-card class="app-card">
+            <ion-card class="app-card pointer" (click)="navigateTo('/tabs/show-quote')">
                 <ion-card-content>
                     <ion-grid>
                         <ion-row>
@@ -116,7 +117,7 @@
                     </ion-grid>
                 </ion-card-content>
             </ion-card>
-            <ion-card class="app-card">
+            <ion-card class="app-card pointer" (click)="navigateTo('/tabs/show-quote')">
                 <ion-card-content>
                     <ion-grid>
                         <ion-row>
@@ -137,7 +138,7 @@
                     </ion-grid>
                 </ion-card-content>
             </ion-card>
-            <ion-card class="app-card">
+            <ion-card class="app-card pointer" (click)="navigateTo('/tabs/show-bill')">
                 <ion-card-content>
                     <ion-grid>
                         <ion-row>
