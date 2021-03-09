@@ -14,39 +14,44 @@
         </div>
         <ion-grid>
             <ion-row>
-                <ion-col size='2'>
+                <ion-col size='2' class="center pb-4 pe-0">
+                    <ion-icon src="assets/icon/edit.svg" class="app-icon edit-icon pointer"></ion-icon>
                 </ion-col>
                 <ion-col size='8' class="center bill-title">
                     <p>DEV1458697456</p>
+                    <span class="badge status-green">Acceptée</span>
                 </ion-col>
-                <ion-col size='2' class="center mt-2">
-                    <ion-icon src="assets/icon/edit.svg" class="app-icon edit-icon pointer"></ion-icon>
+                <ion-col size='2' class="center pb-4 ps-0">
+                    <ion-icon name="trash-outline" class="app-icon trash-icon"></ion-icon>
                 </ion-col>
             </ion-row>
         </ion-grid>
         <ion-grid>
             <ion-row>
-                <ion-col size='12' class="center mt-3 mb-3">
-                    <input type="text" id="name" class="input-with-icon" placeholder='Nom'>
+                <ion-col size='12' class="center mb-2">
+                    <input type="text" id="client" class="input-with-icon" placeholder='Client'>
                     <ion-icon name="person-outline" class="input-icon"></ion-icon>
                 </ion-col>
-                <ion-col size='12' class="center mb-3">
+                <ion-col size='12' class="center mb-2">
                     <input type="email" id="email" class="input-with-icon" placeholder='Email'>
                     <ion-icon name="mail-outline" class="input-icon"></ion-icon>
                 </ion-col>
-                <ion-col size='6' class="center mb-3">
+                <ion-col size='6' class="center mb-2">
                     <input type="text" id="phone" class="input-with-icon" placeholder='Téléphone'>
                     <ion-icon name="call-outline" class="input-icon"></ion-icon>
                 </ion-col>
-                <ion-col size='6' class="center mb-3">
+                <ion-col size='6' class="center mb-2">
                     <input type="date" id="dateC" class="input-without-icon" placeholder='Création'>
                     <ion-icon name="calendar-outline" class="input-icon"></ion-icon>
                 </ion-col>
-                <ion-col size='12' class="center mb-3">
+                <ion-col size='12' class="center mb-2">
                     <app-article-table class="w-100" [articles]="articles"></app-article-table>
                 </ion-col>
-                <ion-col size='12' class="center mb-3">
+                <ion-col size='6' class="center mb-2">
                     <button class="app-btn-auth pointer">Relancer</button>
+                </ion-col>
+                <ion-col size='6' class="center mb-2">
+                    <button class="app-btn-auth pointer"><ion-icon name="cloud-download"></ion-icon>&nbsp;&nbsp;Télécharger</button>
                 </ion-col>
             </ion-row>
         </ion-grid>

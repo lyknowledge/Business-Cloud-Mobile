@@ -68,10 +68,6 @@ const routes: Routes = [
         loadChildren: () => import('./../pages/show-expense/show-expense.module').then(m => m.ShowExpensePageModule)
       },
       {
-        path: 'user-expenses',
-        loadChildren: () => import('./../pages/user-expenses/user-expenses.module').then(m => m.UserExpensesPageModule)
-      },
-      {
         path: '',
         redirectTo: '/tabs/tab3',
         pathMatch: 'full'

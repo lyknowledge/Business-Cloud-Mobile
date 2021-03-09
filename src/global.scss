@@ -62,8 +62,8 @@ ion-grid {
 }
 
 .background-div {
-    background-color: var(--color-2);
-    --ion-background-color: var(--color-2);
+    background-color: #185088;
+    --ion-background-color: #185088;
 }
 
 .background-div-rounded {
@@ -72,6 +72,7 @@ ion-grid {
     min-height: 76vh;
     background-color: white;
     border-radius: 50px 50px 0px 0px;
+    box-shadow: 0px 2px 11px #00000090;
     ion-grid {
         background: transparent;
     }
@@ -85,6 +86,7 @@ ion-grid {
     border-radius: 10px;
     padding: 0 calc(16px + var(--ion-safe-area-left, 0px));
     padding-right: 40px;
+    box-shadow: 1px 3px 4px #0000000a;
 }
 
 .input-without-icon {
@@ -94,6 +96,22 @@ ion-grid {
     width: 100%;
     border-radius: 10px;
     padding: 0 calc(16px + var(--ion-safe-area-left, 0px));
+    box-shadow: 1px 3px 4px #0000000a;
+}
+
+.textarea-without-icon {
+    background: white;
+    border: 1px solid #00000040;
+    min-height: 150px;
+    max-height: 150px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 8px calc(16px + var(--ion-safe-area-left, 0px));
+    box-shadow: 1px 3px 4px #0000000a;
+}
+
+.textarea-without-icon:focus {
+    outline: none;
 }
 
 .input-with-icon:focus {
@@ -118,6 +136,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 20px;
     height: 20px;
     color: var(--color-3);
+    fill: var(--color-3);
 }
 
 .app-icon {
@@ -166,7 +185,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
     .card-text-profit {
         text-align: center;
-        color: #09B225;
+        color: #54ad63;
         font-size: 0.9rem;
         font-weight: 600;
         margin: 0;
@@ -225,6 +244,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     height: 35px;
     font-size: 1.085rem;
     font-weight: 400;
+    box-shadow: 1px 3px 4px #0000000a;
 }
 
 .title-auth {
@@ -331,4 +351,22 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     div {
         padding: 5px;
     }
+}
+
+.status-green {
+    background-color: #54ad63;
+}
+
+.badge {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.25em 0.4em;
+    font-weight: 500;
+    font-size: unset;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
