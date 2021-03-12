@@ -21,21 +21,8 @@
                             </div>
                         </div>
                         <div class="text-profile-card pointer" (click)="navigateTo('/tabs/user-info')">
-                            <p class="main-text">Changer mes informations</p>
-                            <p class="sub-text">Mettre à jour vos données personnelles</p>
-                        </div>
-                    </div>
-                </ion-col>
-                <ion-col size='12' class="center">
-                    <div class="profile-card pointer" (click)="navigateTo('/tabs/user-avatar')">
-                        <div class="icon-profile-card pointer" (click)="navigateTo('/tabs/user-avatar')">
-                            <div class="icon-div center">
-                                <ion-icon name="image-outline" class="app-icon"></ion-icon>
-                            </div>
-                        </div>
-                        <div class="text-profile-card pointer" (click)="navigateTo('/tabs/user-avatar')">
-                            <p class="main-text">Changer d'avatar</p>
-                            <p class="sub-text">Mettre à jour votre photo de profil</p>
+                            <p class="main-text">Informations du compte</p>
+                            <p class="sub-text hide-overflow">Données personnelles, photo de profil</p>
                         </div>
                     </div>
                 </ion-col>
@@ -47,21 +34,8 @@
                             </div>
                         </div>
                         <div class="text-profile-card pointer" (click)="navigateTo('/tabs/user-change-password')">
-                            <p class="main-text">Changer de mot de passe</p>
-                            <p class="sub-text">Mettre à jour vos mots de passe</p>
-                        </div>
-                    </div>
-                </ion-col>
-                <ion-col size='12' class="center">
-                    <div class="profile-card pointer" (click)="navigateTo('/tabs/tab2')">
-                        <div class="icon-profile-card pointer" (click)="navigateTo('/tabs/tab2')">
-                            <div class="icon-div center">
-                                <ion-icon name="document-text-outline" class="app-icon"></ion-icon>
-                            </div>
-                        </div>
-                        <div class="text-profile-card pointer" (click)="navigateTo('/tabs/tab2')">
-                            <p class="main-text">Voir mes notes de frais</p>
-                            <p class="sub-text">Visioner l'ensemble des notes</p>
+                            <p class="main-text">Informations de sécurité</p>
+                            <p class="sub-text hide-overflow">Mot de passe, double authentification</p>
                         </div>
                     </div>
                 </ion-col>
@@ -73,8 +47,34 @@
                             </div>
                         </div>
                         <div class="text-profile-card pointer" (click)="navigateTo('/tabs/user-change-address')">
-                            <p class="main-text">Changer mon adresse</p>
-                            <p class="sub-text">Mettre à jour votre adresse</p>
+                            <p class="main-text">Informations de location</p>
+                            <p class="sub-text hide-overflow">Mettre à jour votre adresse</p>
+                        </div>
+                    </div>
+                </ion-col>
+                <!-- <ion-col size='12' class="center">
+                    <div class="profile-card pointer" (click)="navigateTo('/tabs/user-avatar')">
+                        <div class="icon-profile-card pointer" (click)="navigateTo('/tabs/user-avatar')">
+                            <div class="icon-div center">
+                                <ion-icon name="image-outline" class="app-icon"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="text-profile-card pointer" (click)="navigateTo('/tabs/user-avatar')">
+                            <p class="main-text"></p>
+                            <p class="sub-text hide-overflow">Mettre à jour votre photo de profil</p>
+                        </div>
+                    </div>
+                </ion-col> -->
+                <ion-col size='12' class="center">
+                    <div class="profile-card pointer" (click)="navigateTo('/tabs/tab2')">
+                        <div class="icon-profile-card pointer" (click)="navigateTo('/tabs/tab2')">
+                            <div class="icon-div center">
+                                <ion-icon name="document-text-outline" class="app-icon"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="text-profile-card pointer" (click)="navigateTo('/tabs/tab2')">
+                            <p class="main-text">Notes de frais</p>
+                            <p class="sub-text hide-overflow">Visioner l'ensemble des notes</p>
                         </div>
                     </div>
                 </ion-col>
@@ -87,7 +87,7 @@
                         </div>
                         <div class="text-profile-card pointer" (click)="navigateTo('/auth/login')">
                             <p class="main-text">Déconnexion</p>
-                            <p class="sub-text">Sortir de l'application</p>
+                            <p class="sub-text hide-overflow">Sortir de l'application</p>
                         </div>
                     </div>
                 </ion-col>

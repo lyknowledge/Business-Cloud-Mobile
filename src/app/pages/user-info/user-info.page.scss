@@ -1,7 +1,20 @@
-.mbottom-2 {
-    margin-bottom: 1.5rem !important;
+.avatar-grid {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    border: 1px solid #00000040;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 0;
+    div {
+        padding: 0;
+    }
 }
 
-.input-icon {
-    right: 15%;
+.circle-avatar {
+    width: 160px;
+    height: 160px;
+    border: 1px solid #00000040;
+    border-radius: 50%;
 }

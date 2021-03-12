@@ -11,10 +11,6 @@
     }
 }
 
-p {
-    margin: 0;
-}
-
 .notif-card {
     display: flex;
     height: 60px;
@@ -56,15 +52,4 @@ p {
         color: #00000070;
         font-size: 12px;
     }
-}
-
-.transparent-top {
-    position: fixed;
-    top: 88px;
-    width: 100%;
-    text-align: center;
-    margin: 0;
-    padding: 2px 0;
-    background-image: linear-gradient( 180deg, #0000000d 0%, transparent 100%) !important;
-    z-index: 10;
 }

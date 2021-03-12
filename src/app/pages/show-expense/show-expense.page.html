@@ -21,26 +21,44 @@
                     <span class="badge status-green">Acceptée</span>
                 </ion-col>
                 <ion-col size='2' class="center mb-3">
-                    <ion-icon src="assets/icon/edit.svg" class="app-icon edit-icon pointer"></ion-icon>
+                    <!-- <ion-icon src="assets/icon/edit.svg" class="app-icon edit-icon pointer"></ion-icon> -->
                 </ion-col>
             </ion-row>
         </ion-grid>
         <ion-grid>
             <ion-row>
-                <ion-col size='12' class="center mb-2">
+                <ion-col size='3' class="center mb-2">
+                    <div class="separate-div"></div>
+                </ion-col>
+                <ion-col size='6' class="center mb-2">
+                    <p class="separate-text">Informations</p>
+                </ion-col>
+                <ion-col size='3' class="center mb-2">
+                    <div class="separate-div"></div>
+                </ion-col>
+                <ion-col size='12' class="start mb-2">
+                    <label class="input-label">Employé</label>
                     <input type="text" id="employe" class="input-with-icon" placeholder='Employé'>
-                    <ion-icon name="person-outline" class="input-icon"></ion-icon>
+                    <ion-icon name="person-outline" class="input-icon-with-label"></ion-icon>
                 </ion-col>
-                <ion-col size='12' class="center mb-2">
+                <ion-col size='12' class="start mb-2">
+                    <label class="input-label">Email</label>
                     <input type="email" id="email" class="input-with-icon" placeholder='Email'>
-                    <ion-icon name="mail-outline" class="input-icon"></ion-icon>
+                    <ion-icon name="mail-outline" class="input-icon-with-label"></ion-icon>
                 </ion-col>
-                <ion-col size='5' class="center mb-2">
-                    <input type="email" id="email" class="input-with-icon" placeholder='Prix'>
-                    <ion-icon src="assets/icon/money.svg" class="input-icon"></ion-icon>
+                <ion-col size='12' class="start mb-2">
+                    <label class="input-label">Création</label>
+                    <input type="date" id="dateC" class="input-without-icon" placeholder='Création'>
+                    <ion-icon name="calendar-outline" class="input-icon-with-label"></ion-icon>
                 </ion-col>
-                <ion-col size='7' class="center mb-2">
-                    <ion-item>
+                <ion-col size='5' class="start mb-2">
+                    <label class="input-label">Montant</label>
+                    <input type="text" id="price" class="input-with-icon" placeholder='Montant'>
+                    <ion-icon src="assets/icon/money.svg" class="input-icon-with-label"></ion-icon>
+                </ion-col>
+                <ion-col size='7' class="start mb-2">
+                    <label class="input-label">Type</label>
+                    <ion-item class="select-input">
                         <ion-select placeholder="Type">
                             <ion-select-option value="3">Restaurant</ion-select-option>
                             <ion-select-option value="2">Déplacement</ion-select-option>
@@ -48,12 +66,14 @@
                         </ion-select>
                     </ion-item>
                 </ion-col>
-                <ion-col size='12' class="center mb-2">
+                <ion-col size='12' class="start mb-2">
+                    <label class="input-label">Document</label>
                     <div class="picture-div">
                     </div>
                 </ion-col>
-                <ion-col size='12' class="center mb-3">
-                    <textarea type="text" id="description" class="textarea-without-icon" placeholder='Description de la note'></textarea>
+                <ion-col size='12' class="start mb-3">
+                    <label class="input-label">Description de la note de frais</label>
+                    <textarea type="text" id="description" class="textarea-without-icon" placeholder='Description de la note de frais'></textarea>
                 </ion-col>
             </ion-row>
         </ion-grid>

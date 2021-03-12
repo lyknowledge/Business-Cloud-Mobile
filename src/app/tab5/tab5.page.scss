@@ -17,7 +17,7 @@
 }
 
 .name-profile {
-    margin-top: 6rem;
+    margin-top: 5.5rem;
     font-size: 20px;
     font-weight: 600;
     color: var(--color-3);
@@ -56,7 +56,7 @@ p {
 }
 
 .text-profile-card {
-    width: -webkit-fill-available;
+    width: 14.9rem;
     padding: 0px 10px;
     margin: auto;
     .main-text {
@@ -71,7 +71,6 @@ p {
     }
 }
 
-.edit-icon {
-    width: 25px;
-    height: 25px;
+.background-div-rounded ion-grid {
+    padding: 0 5px;
 }

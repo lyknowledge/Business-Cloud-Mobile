@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Location } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-btn',
@@ -7,8 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddBtnComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router, private location: Location) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
+
+  navigateTo(path: string) {
+    this.router.navigate([path]);
+  }
+
+  nagivateBack() {
+    this.location.back();
+  }
 
 }
