@@ -41,6 +41,12 @@ ion-content {
     &::-webkit-scrollbar {
         display: none;
     }
+    p {
+        margin: 0;
+    }
+    ion-icon {
+        --ionicon-stroke-width: 40px;
+    }
 }
 
 ion-grid {
@@ -62,8 +68,8 @@ ion-grid {
 }
 
 .background-div {
-    background-color: var(--color-2);
-    --ion-background-color: var(--color-2);
+    background-color: #294b70;
+    --ion-background-color: #294b70;
 }
 
 .background-div-rounded {
@@ -72,8 +78,11 @@ ion-grid {
     min-height: 76vh;
     background-color: white;
     border-radius: 50px 50px 0px 0px;
+    box-shadow: 0px 2px 11px #00000090;
     ion-grid {
         background: transparent;
+        padding-right: 0.80rem;
+        padding-left: 0.80rem;
     }
 }
 
@@ -85,6 +94,7 @@ ion-grid {
     border-radius: 10px;
     padding: 0 calc(16px + var(--ion-safe-area-left, 0px));
     padding-right: 40px;
+    box-shadow: 1px 3px 4px #0000000a;
 }
 
 .input-without-icon {
@@ -94,6 +104,22 @@ ion-grid {
     width: 100%;
     border-radius: 10px;
     padding: 0 calc(16px + var(--ion-safe-area-left, 0px));
+    box-shadow: 1px 3px 4px #0000000a;
+}
+
+.textarea-without-icon {
+    background: white;
+    border: 1px solid #00000040;
+    min-height: 150px;
+    max-height: 150px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 8px calc(16px + var(--ion-safe-area-left, 0px));
+    box-shadow: 1px 3px 4px #0000000a;
+}
+
+.textarea-without-icon:focus {
+    outline: none;
 }
 
 .input-with-icon:focus {
@@ -118,6 +144,35 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 20px;
     height: 20px;
     color: var(--color-3);
+    fill: var(--color-3);
+}
+
+.input-icon-with-label {
+    position: absolute;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    color: var(--color-3);
+    fill: var(--color-3);
+    bottom: 12px;
+}
+
+.input-label {
+    margin-bottom: 5px;
+    padding-left: 2px;
+    color: var(--color-3);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.input-label.toggle {
+    font-size: 17px;
+}
+
+.red-star {
+    font-size: 16px;
+    color: red;
+    margin-left: 5px;
 }
 
 .app-icon {
@@ -166,7 +221,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
     .card-text-profit {
         text-align: center;
-        color: #09B225;
+        color: #54ad63;
         font-size: 0.9rem;
         font-weight: 600;
         margin: 0;
@@ -225,6 +280,35 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     height: 35px;
     font-size: 1.085rem;
     font-weight: 400;
+    box-shadow: 1px 3px 4px #0000000a;
+}
+
+.app-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-3);
+    color: white;
+    border-radius: 10px;
+    height: 35px;
+    font-size: 1.085rem;
+    font-weight: 400;
+    box-shadow: 1px 3px 4px #0000000a;
+}
+
+.app-btn-delete {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F20C0C;
+    color: white;
+    border-radius: 10px;
+    height: 35px;
+    font-size: 1.085rem;
+    font-weight: 400;
+    box-shadow: 1px 3px 4px #0000000a;
 }
 
 .title-auth {
@@ -325,10 +409,129 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
 }
 
+.back-arrow-div {
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+    left: 0;
+    width: 100%;
+    .header-title {
+        color: var(--color-3);
+    }
+    ion-icon {
+        color: var(--color-3);
+    }
+}
+
 .input-div-profile {
     min-height: 76vh;
     width: 100%;
-    div {
-        padding: 5px;
+    // padding-top: 2rem;
+}
+
+.status-green {
+    background-color: #54ad63;
+}
+
+.badge {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.25em 0.4em;
+    font-weight: 500;
+    font-size: unset;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.edit-icon {
+    width: 27px;
+    height: 27px;
+}
+
+.trash-icon {
+    width: 24px;
+    height: 24px;
+    color: red;
+}
+
+.percent-icon {
+    width: 15px;
+    height: 15px;
+    bottom: 15px;
+}
+
+.create-title {
+    p {
+        margin: 0;
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--color-3);
     }
+}
+
+.separate-div {
+    background-color: var(--color-3);
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.separate-text {
+    color: var(--color-3);
+    font-size: 20px;
+}
+
+ion-item.select-input {
+    border: 1px solid #00000040;
+    --border-width: 0;
+    border-radius: 10px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    --background: white;
+    box-shadow: 1px 3px 4px #0000000a;
+    ion-select {
+        padding: 0;
+        width: 100%;
+        --placeholder-opacity: 1;
+        --placeholder-color: #757575;
+        .select-placeholder {
+            --color: black;
+            --opacity: 1;
+            color: black;
+            opacity: 1;
+        }
+    }
+}
+
+.bill-title {
+    margin-top: 0.25rem;
+    p {
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--color-3);
+    }
+}
+
+.progress-input {
+    width: 100%;
+    ion-label {
+        font-size: 16px;
+    }
+    ion-range {
+        padding: 0;
+    }
+}
+
+.explain-text {
+    color: var(--color-3);
+}
+
+.pb-4 {
+    padding-bottom: 2rem !important;
 }

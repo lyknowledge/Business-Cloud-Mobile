@@ -3,11 +3,13 @@ import { Location } from '@angular/common';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-user-avatar',
-  templateUrl: './user-avatar.page.html',
-  styleUrls: ['./user-avatar.page.scss'],
+  selector: 'app-add-page',
+  templateUrl: './add-page.page.html',
+  styleUrls: ['./add-page.page.scss'],
 })
-export class UserAvatarPage implements OnInit {
+export class AddPagePage implements OnInit {
+
+  selected = '1';
 
   constructor(private router: Router, private location: Location) { }
 
@@ -22,4 +24,8 @@ export class UserAvatarPage implements OnInit {
     this.location.back();
   }
 
+
+  onSelectedChange($event) {
+    this.selected = $event.detail?.value;
+  }
 }

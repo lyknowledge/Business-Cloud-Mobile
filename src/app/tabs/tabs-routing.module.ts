@@ -40,10 +40,6 @@ const routes: Routes = [
         loadChildren: () => import('./../pages/user-info/user-info.module').then(m => m.UserInfoPageModule)
       },
       {
-        path: 'user-avatar',
-        loadChildren: () => import('./../pages/user-avatar/user-avatar.module').then(m => m.UserAvatarPageModule)
-      },
-      {
         path: 'user-change-password',
         loadChildren: () => import('./../pages/user-change-password/user-change-password.module').then(m => m.UserChangePasswordPageModule)
       },
@@ -68,8 +64,8 @@ const routes: Routes = [
         loadChildren: () => import('./../pages/show-expense/show-expense.module').then(m => m.ShowExpensePageModule)
       },
       {
-        path: 'user-expenses',
-        loadChildren: () => import('./../pages/user-expenses/user-expenses.module').then(m => m.UserExpensesPageModule)
+        path: 'add-page',
+        loadChildren: () => import('./../pages/add-page/add-page.module').then(m => m.AddPagePageModule)
       },
       {
         path: '',

@@ -15,11 +15,11 @@ export class MessagesPage implements OnInit {
   }
 
   navigateTo(path: string) {
-    this.router.navigate([path])
+    this.router.navigate([path]);
   }
 
   nagivateBack() {
-    this.location.back()
+    this.location.back();
   }
 
 }
