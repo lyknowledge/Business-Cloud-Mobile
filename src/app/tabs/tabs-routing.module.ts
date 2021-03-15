@@ -68,6 +68,10 @@ const routes: Routes = [
         loadChildren: () => import('./../pages/add-page/add-page.module').then(m => m.AddPagePageModule)
       },
       {
+        path: 'show-project',
+        loadChildren: () => import('./../pages/show-project/show-project.module').then(m => m.ShowProjectPageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab3',
         pathMatch: 'full'

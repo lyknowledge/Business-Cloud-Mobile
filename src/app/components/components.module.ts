@@ -3,15 +3,19 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
-import { AddBtnComponent } from './add-btn/add-btn.component';
-import { ArticleTableComponent } from './article-table/article-table.component';
-import { ArticleTableRowComponent } from './article-table/article-table-row/article-table-row.component';
-import { AddBillComponent } from './add-bill/add-bill.component';
-import { AddClientComponent } from './add-client/add-client.component';
-import { AddQuoteComponent } from './add-quote/add-quote.component';
-import { AddEmployeeComponent } from './add-employee/add-employee.component';
-import { AddExpenseComponent } from './add-expense/add-expense.component';
-import { AddProjectComponent } from './add-project/add-project.component';
+import { AddBtnComponent } from './add-page/add-btn/add-btn.component';
+import { ArticleTableComponent } from './table/article-table/article-table.component';
+import { ArticleTableRowComponent } from './table/article-table/article-table-row/article-table-row.component';
+import { AddBillComponent } from './add-page/add-bill/add-bill.component';
+import { AddClientComponent } from './add-page/add-client/add-client.component';
+import { AddQuoteComponent } from './add-page/add-quote/add-quote.component';
+import { AddEmployeeComponent } from './add-page/add-employee/add-employee.component';
+import { AddExpenseComponent } from './add-page/add-expense/add-expense.component';
+import { AddProjectComponent } from './add-page/add-project/add-project.component';
+import { AddArticleComponent } from './add-page/add-article/add-article.component';
+import { AddExpenseAccountComponent } from './add-page/add-expense-account/add-expense-account.component';
+import { TimeProjectComponent } from './modals/time-project/time-project.component';
+import { CalendarProjectComponent } from './modals/calendar-project/calendar-project.component';
 
 
 @NgModule({
@@ -26,6 +30,10 @@ import { AddProjectComponent } from './add-project/add-project.component';
     AddEmployeeComponent,
     AddExpenseComponent,
     AddProjectComponent,
+    AddArticleComponent,
+    AddExpenseAccountComponent,
+    TimeProjectComponent,
+    CalendarProjectComponent,
   ],
   imports: [
     IonicModule,
@@ -43,6 +51,10 @@ import { AddProjectComponent } from './add-project/add-project.component';
     AddEmployeeComponent,
     AddExpenseComponent,
     AddProjectComponent,
+    AddArticleComponent,
+    AddExpenseAccountComponent,
+    TimeProjectComponent,
+    CalendarProjectComponent,
   ]
 })
 export class ComponentsModule { }

@@ -7,10 +7,12 @@
                     <ion-select placeholder="Séléctionner une option..." (ionChange)="onSelectedChange($event)" [value]="selected">
                         <ion-select-option value="1">Devis</ion-select-option>
                         <ion-select-option value="2">Facture</ion-select-option>
+                        <ion-select-option value="3">Article</ion-select-option>
                         <ion-select-option value="4">Client</ion-select-option>
                         <ion-select-option value="5">Employé</ion-select-option>
-                        <ion-select-option value="6">Note de frais</ion-select-option>
-                        <ion-select-option value="7">Projet</ion-select-option>
+                        <ion-select-option value="6">Dépense</ion-select-option>
+                        <ion-select-option value="7">Note de frais</ion-select-option>
+                        <ion-select-option value="8">Projet</ion-select-option>
                     </ion-select>
                 </ion-item>
             </ion-col>
@@ -18,8 +20,10 @@
     </ion-grid>
     <app-add-quote *ngIf="selected === '1'"></app-add-quote>
     <app-add-bill *ngIf="selected === '2'"></app-add-bill>
+    <app-add-article *ngIf="selected === '3'"></app-add-article>
     <app-add-client *ngIf="selected === '4'"></app-add-client>
     <app-add-employee *ngIf="selected === '5'"></app-add-employee>
     <app-add-expense *ngIf="selected === '6'"></app-add-expense>
-    <app-add-project *ngIf="selected === '7'"></app-add-project>
+    <app-add-expense-account *ngIf="selected === '7'"></app-add-expense-account>
+    <app-add-project *ngIf="selected === '8'"></app-add-project>
 </ion-content>

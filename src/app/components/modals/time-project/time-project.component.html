@@ -1,0 +1,56 @@
+<ion-content>
+    <ion-grid class="header-div-snd">
+        <ion-row>
+            <ion-col size='3' class="start">
+                <ion-icon name="chevron-back-outline" class="app-icon pointer" (click)="dismiss()"></ion-icon>
+            </ion-col>
+            <ion-col size='6'>
+                <h2 class="header-title text-center">Temps</h2>
+            </ion-col>
+            <ion-col size='3' class="end">
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <ion-grid>
+        <ion-row>
+            <ion-col size='12' class="center mb-2">
+                <div class="time-div">
+                    {{ time | date: 'hh:mm:ss' }}
+                </div>
+            </ion-col>
+            <ion-col size='12' class="start mb-4">
+                <button class="app-btn pointer"><ion-icon name="time"></ion-icon>&nbsp;&nbsp;Enregister du temps</button>
+            </ion-col>
+            <ion-col size='1' class="center mb-2">
+                <div class="separate-div"></div>
+            </ion-col>
+            <ion-col size='10' class="center mb-2">
+                <p class="separate-text">Derniers enregistrements</p>
+            </ion-col>
+            <ion-col size='1' class="center mb-2">
+                <div class="separate-div"></div>
+            </ion-col>
+            <ion-col size='12' class="start">
+                <input type="text" id="employe" class="input-with-icon" placeholder='Employé'>
+                <ion-icon name="person-outline" class="input-icon"></ion-icon>
+            </ion-col>
+            <ion-col size='6' class="start">
+                <input type="date" id="date" class="input-with-icon" placeholder="Date d'enrgistrement">
+                <ion-icon name="calendar-outline" class="input-icon"></ion-icon>
+            </ion-col>
+            <ion-col size='6' class="start">
+                <input type="text" id="temps" class="input-with-icon" placeholder="Temps">
+                <ion-icon name="time-outline" class="input-icon"></ion-icon>
+            </ion-col>
+            <ion-col size='4' class="start">
+                <button class="app-btn pointer"><ion-icon src="assets/icon/edit.svg" class="edit-icon"></ion-icon></button>
+            </ion-col>
+            <ion-col size='4' class="start">
+                <button class="app-btn btn-green pointer"><ion-icon name="document-text"></ion-icon></button>
+            </ion-col>
+            <ion-col size='4' class="start">
+                <button class="app-btn btn-red pointer"><ion-icon name="trash-outline"></ion-icon></button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
