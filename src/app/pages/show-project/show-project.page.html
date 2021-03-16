@@ -1,0 +1,165 @@
+<ion-content class="background-div">
+    <div class="background-div-rounded">
+        <div class="back-arrow-absolute center">
+            <ion-row class="w-100">
+                <ion-col size='2' class="center">
+                    <ion-icon name="chevron-back-outline" class="app-icon pointer" (click)="nagivateBack()"></ion-icon>
+                </ion-col>
+                <ion-col size='8'>
+                    <h2 class="header-title text-center hide-overflow">Projet</h2>
+                </ion-col>
+                <ion-col size='2' class="end">
+                </ion-col>
+            </ion-row>
+        </div>
+        <ion-grid>
+            <ion-row>
+                <ion-col size='2' class="center pb-4 pe-0">
+                    <ion-icon src="assets/icon/edit.svg" class="app-icon edit-icon pointer"></ion-icon>
+                </ion-col>
+                <ion-col size='8' class="center bill-title">
+                    <p>PRO1458697456</p>
+                    <span class="badge status-green">Terminé</span>
+                </ion-col>
+                <ion-col size='2' class="center pb-4 ps-0">
+                    <ion-icon name="trash-outline" class="app-icon trash-icon"></ion-icon>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+        <ion-grid>
+            <ion-row>
+                <ion-col size='3' class="center mb-2">
+                    <div class="separate-div"></div>
+                </ion-col>
+                <ion-col size='6' class="center mb-2">
+                    <p class="separate-text">Statistiques</p>
+                </ion-col>
+                <ion-col size='3' class="center mb-2">
+                    <div class="separate-div"></div>
+                </ion-col>
+                <ion-col size='12' class="start mb-2">
+                    <label class="input-label">Progression</label>
+                    <div class="progress-input">
+                        <ion-range min="0" max="100" step="5">
+                            <ion-label slot="start">0</ion-label>
+                            <ion-label slot="end">100</ion-label>
+                        </ion-range>
+                    </div>
+                </ion-col>
+                <ion-col size='12' class="center">
+                    <div class="stat-card">
+                        <div class="icon-stat-card">
+                            <div class="icon-div center">
+                                <ion-icon name="time-outline" class="app-icon"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="text-stat-card">
+                            <p class="input-label">Temps facturable</p>
+                            <p class="stat-green">17 heures</p>
+                        </div>
+                    </div>
+                </ion-col>
+                <ion-col size='12' class="center">
+                    <div class="stat-card">
+                        <div class="icon-stat-card">
+                            <div class="icon-div center">
+                                <ion-icon src="assets/icon/money.svg" class="app-icon"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="text-stat-card">
+                            <p class="input-label">Coût (500 € /heure)</p>
+                            <p class="stat-green">8,500.00 €</p>
+                        </div>
+                    </div>
+                </ion-col>
+                <ion-col size='12' class="center">
+                    <div class="stat-card">
+                        <div class="icon-stat-card">
+                            <div class="icon-div center">
+                                <ion-icon src="assets/icon/money.svg" class="app-icon"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="text-stat-card">
+                            <p class="input-label">Dépenses supplémentaires</p>
+                            <p class="stat-red">2,000.00 €</p>
+                        </div>
+                    </div>
+                </ion-col>
+                <ion-col size='12' class="center">
+                    <div class="stat-card">
+                        <div class="icon-stat-card">
+                            <div class="icon-div center">
+                                <ion-icon src="assets/icon/money.svg" class="app-icon"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="text-stat-card">
+                            <p class="input-label">Montant facturable</p>
+                            <p class="stat-green">10,500.00 €</p>
+                        </div>
+                    </div>
+                </ion-col>
+                <ion-col size='3' class="center mb-2">
+                    <div class="separate-div"></div>
+                </ion-col>
+                <ion-col size='6' class="center mb-2">
+                    <p class="separate-text">Actions</p>
+                </ion-col>
+                <ion-col size='3' class="center mb-2">
+                    <div class="separate-div"></div>
+                </ion-col>
+                <ion-col size='12' class="center mb-2">
+                    <button class="app-btn pointer" (click)="showCalendarModal()">
+                        <ion-icon name="calendar"></ion-icon>&nbsp;&nbsp;Voir le calendrier
+                    </button>
+                </ion-col>
+                <ion-col size='12' class="center mb-2">
+                    <button class="app-btn pointer"><ion-icon name="document-text"></ion-icon>&nbsp;&nbsp;Générer une facture</button>
+                </ion-col>
+                <ion-col size='12' class="center mb-2" (click)="navigateTo('/tabs/add-page')">
+                    <button class="app-btn pointer"><ion-icon name="document-text"></ion-icon>&nbsp;&nbsp;Ajouter une dépense</button>
+                </ion-col>
+                <ion-col size='12' class="center mb-2">
+                    <button class="app-btn pointer" (click)="showAddTimeModal()"><ion-icon name="time"></ion-icon>&nbsp;&nbsp;Enregistrer du temps</button>
+                </ion-col>
+                <ion-col size='3' class="center mb-2">
+                    <div class="separate-div"></div>
+                </ion-col>
+                <ion-col size='6' class="center mb-2">
+                    <p class="separate-text">Informations</p>
+                </ion-col>
+                <ion-col size='3' class="center mb-2">
+                    <div class="separate-div"></div>
+                </ion-col>
+                <ion-col size='12' class="start mb-2">
+                    <label class="input-label">Client</label>
+                    <input type="text" id="client" class="input-with-icon" placeholder='Client'>
+                    <ion-icon name="person-outline" class="input-icon-with-label"></ion-icon>
+                </ion-col>
+                <ion-col size='12' class="start mb-2">
+                    <label class="input-label">Email</label>
+                    <input type="email" id="email" class="input-with-icon" placeholder='Email'>
+                    <ion-icon name="mail-outline" class="input-icon-with-label"></ion-icon>
+                </ion-col>
+                <ion-col size='12' class="start mb-2">
+                    <label class="input-label">Téléphone</label>
+                    <input type="tel" id="phone" class="input-with-icon" placeholder='Téléphone'>
+                    <ion-icon name="call-outline" class="input-icon-with-label"></ion-icon>
+                </ion-col>
+                <ion-col size='6' class="start mb-2">
+                    <label class="input-label">Création</label>
+                    <input type="date" id="dateC" class="input-without-icon" placeholder='Création'>
+                    <ion-icon name="calendar-outline" class="input-icon-with-label"></ion-icon>
+                </ion-col>
+                <ion-col size='6' class="start mb-2">
+                    <label class="input-label">Échéance</label>
+                    <input type="date" id="dateE" class="input-without-icon" placeholder='Échéance'>
+                    <ion-icon name="calendar-outline" class="input-icon-with-label"></ion-icon>
+                </ion-col>
+                <ion-col size='12' class="start mb-3">
+                    <label class="input-label">Description du projet</label>
+                    <textarea type="text" id="description" class="textarea-without-icon" placeholder='Description du projet'></textarea>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+</ion-content>

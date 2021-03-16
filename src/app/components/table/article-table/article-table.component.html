@@ -1,0 +1,14 @@
+<div class="table row">
+    <div class="col-6 table-cell center">
+        <span>Nom</span>
+    </div>
+    <div class="col-3 table-cell center">
+        <span>Quantité</span>
+    </div>
+    <div class="col-3 table-cell center">
+        <span>Prix</span>
+    </div>
+</div>
+<div class="articles-div row">
+    <app-article-table-row *ngFor="let article of articles" [row]="article"></app-article-table-row>
+</div>

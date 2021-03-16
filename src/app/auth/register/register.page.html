@@ -1,52 +1,78 @@
-<ion-grid>
-    <ion-row>
-        <ion-col size='3' class="center mb-2">
-            <div class="separate-div"></div>
-        </ion-col>
-        <ion-col size='6' class="center mb-2">
-            <p class="separate-text">Informations</p>
-        </ion-col>
-        <ion-col size='3' class="center mb-2">
-            <div class="separate-div"></div>
-        </ion-col>
-        <ion-col size='12' class="start mb-2">
-            <label class="input-label">Nom et Prénom<span class="red-star">*</span></label>
-            <input type="text" id="name" class="input-with-icon" placeholder='Nom du client/entreprise'>
-            <ion-icon name="person-outline" class="input-icon-with-label"></ion-icon>
-        </ion-col>
-        <ion-col size='12' class="start mb-2">
-            <label class="input-label">Email<span class="red-star">*</span></label>
-            <input type="email" id="email" class="input-with-icon" placeholder='Email'>
-            <ion-icon name="mail-outline" class="input-icon-with-label"></ion-icon>
-        </ion-col>
-        <ion-col size='12' class="start mb-2">
-            <label class="input-label">Téléphone<span class="red-star">*</span></label>
-            <input type="tel" id="phone" class="input-with-icon" placeholder='Téléphone'>
-            <ion-icon name="call-outline" class="input-icon-with-label"></ion-icon>
-        </ion-col>
-        <ion-col size='12' class="start mb-2">
-            <label class="input-label">Mot de passe</label>
-            <input type="password" id="password" class="input-with-icon" placeholder='Mot de passe'>
-            <ion-icon name="lock-closed-outline" class="input-icon-with-label"></ion-icon>
-        </ion-col>
-        <ion-col size='12' class="start mb-2">
-            <label class="input-label">Confirmer le mot de passe</label>
-            <input type="password" id="confirmPassword" class="input-with-icon" placeholder='Confirmer le mot de passe'>
-            <ion-icon name="lock-closed-outline" class="input-icon-with-label"></ion-icon>
-        </ion-col>
-        <ion-col size='12' class="start mb-4">
-            <label class="input-label">Rôle</label>
-            <ion-item class="select-input">
-                <ion-select placeholder="Type">
-                    <ion-select-option value="1">Développeur</ion-select-option>
-                    <ion-select-option value="2">Designeur</ion-select-option>
-                    <ion-select-option value="3">Secrétaire</ion-select-option>
-                    <ion-select-option value="4">Commercial</ion-select-option>
-                </ion-select>
-            </ion-item>
-        </ion-col>
-        <ion-col size='12' class="start mb-2">
-            <button class="app-btn pointer"><ion-icon name="add"></ion-icon>&nbsp;&nbsp;Créer un employé</button>
-        </ion-col>
-    </ion-row>
-</ion-grid>
+<ion-content>
+    <div class="logo-div">
+        <img src="./../../../assets/img/logo.PNG" alt="">
+    </div>
+    <ion-grid class="px-3">
+        <ion-row>
+            <ion-col size='12' class="mb-2">
+                <ion-toolbar>
+                    <ion-segment value="personne" (ionChange)="segmentChanged($event)">
+                        <ion-segment-button value="personne">
+                            Particulier
+                        </ion-segment-button>
+                        <ion-segment-button value="entreprise">
+                            Entreprise
+                        </ion-segment-button>
+                    </ion-segment>
+                </ion-toolbar>
+            </ion-col>
+            <ion-col size='12' class="mb-2 start">
+                <label class="input-label">Nom et prénom<span class="red-star">*</span></label>
+                <input type="text" id="nom" class="input-with-icon" placeholder='Nom'>
+                <ion-icon name="person-outline" class="input-icon-with-label"></ion-icon>
+            </ion-col>
+            <ion-col size='12' class="mb-2 start">
+                <label class="input-label">Email<span class="red-star">*</span></label>
+                <input type="email" id="email" class="input-with-icon" placeholder='Email'>
+                <ion-icon name="mail-outline" class="input-icon-with-label"></ion-icon>
+            </ion-col>
+            <ion-col size='12' class="mb-2 start">
+                <label class="input-label">Date de naissance</label>
+                <input type="text" id="date-naiss" class="input-with-icon" placeholder='Date de naissance'>
+                <ion-icon name="calendar-outline" class="input-icon-with-label"></ion-icon>
+            </ion-col>
+            <ion-col size='12' class="mb-2 start">
+                <label class="input-label">Téléphone</label>
+                <input type="text" id="phone" class="input-with-icon" placeholder='Téléphone'>
+                <ion-icon name="call-outline" class="input-icon-with-label"></ion-icon>
+            </ion-col>
+            <ion-col size='12' class="mb-2 start">
+                <label class="input-label">Mot de passe<span class="red-star">*</span></label>
+                <input type="password" id="password" class="input-with-icon" placeholder='Mot de passe'>
+                <ion-icon name="lock-closed-outline" class="input-icon-with-label"></ion-icon>
+            </ion-col>
+            <ion-col size='12' class="mb-2 start" [class.mb-4]="_segment !== 'entreprise'">
+                <label class="input-label">Confirmer le mot de passe<span class="red-star">*</span></label>
+                <input type="password" id="confirmPassword" class="input-with-icon" placeholder='Confirmer le mot de passe'>
+                <ion-icon name="lock-closed-outline" class="input-icon-with-label"></ion-icon>
+            </ion-col>
+            <ion-col size='12' class="mb-2 start" *ngIf="_segment === 'entreprise'">
+                <label class="input-label">Activité<span class="red-star">*</span></label>
+                <input type="text" id="activity" class="input-with-icon" placeholder="Activité">
+                <ion-icon name="information-circle-outline" class="input-icon-with-label"></ion-icon>
+            </ion-col>
+            <ion-col size='12' class="mb-2 start" *ngIf="_segment === 'entreprise'">
+                <label class="input-label">N° TVA<span class="red-star">*</span></label>
+                <input type="text" id="tva" class="input-with-icon" placeholder="N° TVA">
+                <ion-icon name="information-circle-outline" class="input-icon-with-label"></ion-icon>
+            </ion-col>
+            <ion-col size='12' class="mb-2 start" *ngIf="_segment === 'entreprise'">
+                <label class="input-label">N° SIRET<span class="red-star">*</span></label>
+                <input type="text" id="siret" class="input-with-icon" placeholder="N° SIRET">
+                <ion-icon name="information-circle-outline" class="input-icon-with-label"></ion-icon>
+            </ion-col>
+            <ion-col size='12' class="mb-4 start" *ngIf="_segment === 'entreprise'">
+                <label class="input-label">N° RCS<span class="red-star">*</span></label>
+                <input type="text" id="RCS" class="input-with-icon" placeholder="N° RCS">
+                <ion-icon name="information-circle-outline" class="input-icon-with-label"></ion-icon>
+            </ion-col>
+            <ion-col size='12' class="mb-4 center">
+                <button class="app-btn-auth pointer" (click)="navigateTo('/auth/verify-email')">Inscription</button>
+            </ion-col>
+            <ion-col size='12' class="mb-2 center">
+                <span class="register-text">Vous avez déjà un compte ?</span>
+                <span class="password-lost-text pointer" (click)="navigateTo('/auth/login')">Connexion</span>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

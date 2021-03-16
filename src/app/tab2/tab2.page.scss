@@ -1,5 +1,5 @@
 .scroll-list {
-    height: 64vh;
+    height: calc(100vh - 63px - 100px - 50px - 2rem);
     --offset-bottom: auto!important;
     --overflow: hidden;
     overflow: auto;
