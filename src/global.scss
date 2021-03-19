@@ -75,7 +75,7 @@ ion-grid {
 .background-div-rounded {
     width: 100vw;
     margin-top: 15vh;
-    min-height: 76vh;
+    min-height: calc(100vh - 15vh - 63px);
     background-color: white;
     border-radius: 50px 50px 0px 0px;
     box-shadow: 0px 2px 11px #00000090;
@@ -431,7 +431,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .input-div-profile {
-    min-height: 76vh;
+    min-height: calc(100vh - 15vh - 63px);
     width: 100%;
     // padding-top: 2rem;
 }
@@ -530,6 +530,8 @@ ion-item.select-input {
         font-size: 22px;
         font-weight: 600;
         color: var(--color-3);
+        text-align: center;
+        width: 100%;
     }
 }
 

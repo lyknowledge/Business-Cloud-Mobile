@@ -40,7 +40,7 @@
 }
 
 .text-notif-card {
-    width: 11.5rem;
+    width: calc(100% - 58px - 3.5rem);
     padding: 0px 5px;
     margin: auto 0;
     .main-text {
