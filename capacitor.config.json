@@ -1,5 +1,5 @@
 {
-    "appId": "fr.business-cloud.mobile",
+    "appId": "fr.business.cloud.mobile",
     "appName": "BusinessCloud",
     "bundledWebRuntime": false,
     "npmClient": "npm",
